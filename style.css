@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(10, 5, 13, 0.867);
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgb(157, 162, 219);
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    min-width: 30px;
+    border: none;
+    background-color: rgb(8, 108, 75);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(18, 42, 34);
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: 1000;
+    margin-top: 20px;
+}
+
+.desc {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div {
+    font-size: 17px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 40px;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input[type="text"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+        width: 90%;
+    }
+
+    .temp {
+        font-size: 32px;
+    }
+
+    .desc {
+        font-size: 24px;
+    }
+
+    .details > div {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin: 5px 0;  /* Adjust margin for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .temp {
+        font-size: 28px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="submit"] {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .details > div {
+        font-size: 16px; /* Smaller text on very small screens */
+    }
+}
+@media (max-width: 236px) {
+    .container {
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    form {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+    }
+
+    form input[type="text"], 
+    form input[type="submit"] {
+        width: 90%; /* Full width inputs */
+        margin-bottom: 5px; /* Reduced margin */
+    }
+
+    .temp {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    .desc {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .details > div {
+        font-size: 14px; /* Smaller text */
+        padding: 10px; /* Reduced padding */
+    }
+}
