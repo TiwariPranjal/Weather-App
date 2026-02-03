@@ -26,6 +26,10 @@ A simple and responsive **Weather Application** built using **HTML, CSS, and Jav
 
 ---
 
+## Screenshots
+<img width="797" height="677" alt="Weather_screenshots" src="https://github.com/user-attachments/assets/a24b2b90-2206-404f-aec9-4b61ad9b5490" />
+
+
 ## 👤 Author
 
 **Pranjal Tiwari**  
@@ -34,3 +38,4 @@ A simple and responsive **Weather Application** built using **HTML, CSS, and Jav
 - 🌱 Learning Web Development & Data Science  
 
 Feel free to connect and suggest improvements 🚀
+
